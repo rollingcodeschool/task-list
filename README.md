@@ -1,4 +1,4 @@
-# Proyecto Lista de tareas 📋​​
+# Proyecto - Lista de tareas 📋​​
 
 Proyecto para practicar crear componentes maquetados con react-bootstrap, uso de props, state y localstorage.
 
