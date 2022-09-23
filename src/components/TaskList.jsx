@@ -2,10 +2,12 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import Task from "./Task";
 
-const TaskList = () => {
+const TaskList = ({taskList, deleteTask}) => {
   return (
     <ListGroup>
-      <Task></Task>
+      {
+        taskList.map((task, index)=> <Task key={index} taskName={task} deleteTask={deleteTask}></Task>)
+      }
     </ListGroup>
   );
 };

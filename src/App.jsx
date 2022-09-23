@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { Container } from "react-bootstrap";
 import "./app.css";
+import { Container } from "react-bootstrap";
 import TaskForm from "./components/TaskForm";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
         </section>
       </Container>
       <footer className="bg-dark text-light text-center py-4">
-        @copy; Todos los derechos reservados
+        &copy; Todos los derechos reservados
       </footer>
     </>
   );

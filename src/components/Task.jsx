@@ -1,13 +1,15 @@
 import React from "react";
 import { ListGroup, Button } from "react-bootstrap";
-import { XCircle  } from "react-bootstrap-icons";
+import { XCircle } from "react-bootstrap-icons";
 
-const Task = () => {
+const Task = ({ taskName, deleteTask }) => {
   return (
     <ListGroup.Item className="d-flex justify-content-between">
-      Tarea de prueba
+      {taskName}
       <i className="bi bi-x-circle-fill"></i>
-      <Button variant="outline-danger"><XCircle/></Button>
+      <Button variant="outline-danger" onClick={() => deleteTask(taskName)}>
+        <XCircle />
+      </Button>
     </ListGroup.Item>
   );
 };
